@@ -679,7 +679,7 @@ Assuming distinct input values for all $N_t$ node samples, the number of partiti
 non-empty subsets is given by the Stirling number of the second
 kind~\citep{knuth:1992}
 \begin{equation}
-S(N_t, k) = \frac{1}{k!} \sum_{j=0}^k (-1)^{k-j} {k\choose j} j^{N_t},
+S(N_t, k) = \frac{1}{k!} \sum_{j=1}^k (-1)^{k-j} {k\choose j} j^{N_t},
 \end{equation}
 which reduces to $2^{N_t-1}-1$ for binary partitions. Given the exponential
 growth in the number of partitions, the naive strategy of enumerating all
