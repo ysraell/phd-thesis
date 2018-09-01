@@ -693,7 +693,7 @@ The usual family ${\cal Q}$ of
 splits is the set of binary splits defined on a single variable and resulting
 in non-empty subsets of ${\cal L}_t$:
 \begin{equation}\label{eqn:q:single-variables}
-{\cal Q} = \{s | s \in \bigcup_{j=1}^p {\cal Q}(X_j), {\cal L}_{t_L} \neq \phi, {\cal L}_{t_R} \neq \phi \}
+{\cal Q} = \{s | s \in \bigcup_{j=1}^p {\cal Q}(X_j), {\cal L}_{t_L} \neq \emptyset, {\cal L}_{t_R} \neq \emptyset \}
 \end{equation}
 \begin{itemize}
 \item If $X_j$ is an ordered variable taking values in ${\cal X}_j$, then the set of binary splits on $X_j$ is the set
@@ -718,7 +718,7 @@ the split $s^* \in {\cal Q}$ is the best of the best splits defined on each inpu
 variable. That is,
 \begin{align}
 s^* &= \argmax_{\substack{s^*_j\\ j=1, \dots, p}} \Delta i(s^*_j, t) \label{eqn:best-best-split}\\
-s^*_j &= \argmax_{\substack{s \in Q(X_j)\\ {\cal L}_{t_L}, {\cal L}_{t_R} \neq \phi}} \Delta i(s, t) \label{eqn:best-split-single}
+s^*_j &= \argmax_{\substack{s \in Q(X_j)\\ {\cal L}_{t_L}, {\cal L}_{t_R} \neq \emptyset}} \Delta i(s, t) \label{eqn:best-split-single}
 \end{align}
 In this framework, the crux of the problem therefore
 simply reduces to the implementation of Equation~\ref{eqn:best-split-single}.
